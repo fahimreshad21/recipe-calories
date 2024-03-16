@@ -1,9 +1,8 @@
-import { useState } from "react";
+
 
 /* eslint-disable react/prop-types */
 const Card = ({recipe, handleWantToCook}) => {
     const {recipe_id, recipe_image, recipe_name, short_description, ingredients, preparing_time, calories} = recipe;
-    const [ingredient, setIngredients]= useState([]);
   return (
     <div>
       <div className="card h-full bg-base-100 shadow-xl border">
@@ -30,7 +29,7 @@ const Card = ({recipe, handleWantToCook}) => {
             </div>
           </div>       
           <div className="card-actions mt-4">
-            <button onClick={()=> handleWantToCook(recipe)} className="btn btn-error lexend-font rounded-3xl">Want to Cook</button>
+            <button onClick={()=> handleWantToCook(recipe_id, recipe)} className="btn btn-error lexend-font rounded-3xl">Want to Cook</button>
           </div>
         </div>
       </div>
