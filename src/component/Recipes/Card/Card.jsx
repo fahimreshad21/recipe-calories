@@ -1,5 +1,4 @@
-
-
+/* eslint-disable react/jsx-key */
 /* eslint-disable react/prop-types */
 const Card = ({recipe, handleWantToCook}) => {
     const {recipe_id, recipe_image, recipe_name, short_description, ingredients, preparing_time, calories} = recipe;

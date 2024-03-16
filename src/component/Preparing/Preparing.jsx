@@ -1,11 +1,10 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react/jsx-key */
-
-
-const Preparing = ({preaparing}) => {
+const Preparing = ({preparing}) => {
     return (
         <div>
         <div>
-        <h1 className="text-center text-2xl font-bold lexend-font mt-8 border-b-2 pb-2"> Currently Cooking: <span>{preaparing.length}</span></h1>
+        <h1 className="text-center text-2xl font-bold lexend-font mt-8 border-b-2 pb-2"> Currently Cooking: <span>{preparing.length}</span></h1>
       </div>
       <div>
         <div className="overflow-x-auto">
@@ -19,9 +18,8 @@ const Preparing = ({preaparing}) => {
                 <th>Calories</th>
               </tr>
             </thead>
-
             {/* row 1 */}
-            {preaparing.map((prepare) => (
+            {preparing.map((prepare) => (
               <tbody className="bg-gray-50">
                 <tr>
                   <th>1</th>

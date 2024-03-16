@@ -2,18 +2,14 @@
 /* eslint-disable react/prop-types */
 import Preparing from "../Preparing/Preparing";
 import { useState } from "react";
-
-const Cart = ({cooks , setCooks }) => {
-  const [preaparing, setPreparing] = useState([]);
-  const handlePreaparing = ( prepare, recipe_id) =>{
-    const newPreaparing = [...preaparing, prepare];
-    setPreparing(newPreaparing);
-    const preparingRecipe = cooks.filter(co=> co.recipe_id !== recipe_id);
+const Cart = ({ cooks, setCooks }) => {
+  const [preparing, setPreparing] = useState([]);
+  const handlePreparing = (prepare, recipe_id) => {
+    const newPreparing = [...preparing, prepare];
+    setPreparing(newPreparing);
+    const preparingRecipe = cooks.filter((co) => co.recipe_id !== recipe_id);
     setCooks(preparingRecipe);
-    
-    
-  }
-
+  };
   return (
     <div className="card bg-base-100 shadow-xl border flex items-center">
       <div>
@@ -33,7 +29,6 @@ const Cart = ({cooks , setCooks }) => {
                 <th>Calories</th>
               </tr>
             </thead>
-
             {/* row 1 */}
             {cooks.map((cook, index) => (
               <tbody className="bg-gray-50">
@@ -43,7 +38,10 @@ const Cart = ({cooks , setCooks }) => {
                   <td>{cook.preparing_time}</td>
                   <td>{cook.calories}</td>
                   <td>
-                    <button onClick={()=> handlePreaparing(cook, cook.recipe_id)} className="btn btn-success rounded-3xl">
+                    <button
+                      onClick={() => handlePreparing(cook, cook.recipe_id)}
+                      className="btn btn-success rounded-3xl"
+                    >
                       Preparing
                     </button>
                   </td>
@@ -54,8 +52,11 @@ const Cart = ({cooks , setCooks }) => {
         </div>
       </div>
       <div className="w-full">
-      <Preparing preaparing={preaparing} handlePreaparing= {handlePreaparing}></Preparing>
-        </div> 
+        <Preparing
+          preparing={preparing}
+          handlePreparing={handlePreparing}
+        ></Preparing>
+      </div>
     </div>
   );
 };
