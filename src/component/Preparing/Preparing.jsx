@@ -48,4 +48,5 @@ const Preparing = ({ preparing }) => {
     </div>
   );
 };
+
 export default Preparing;
