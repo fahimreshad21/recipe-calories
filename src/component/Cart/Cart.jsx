@@ -57,11 +57,6 @@ const Cart = ({ cooks, setCooks }) => {
           handlePreparing={handlePreparing}
         ></Preparing>
       </div>
-
-      
-      
-      
-      
     </div>
   );
 };

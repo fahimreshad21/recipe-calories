@@ -35,19 +35,17 @@ const Preparing = ({ preparing }) => {
           </table>
         </div>
       </div>
-
       <div className="flex justify-end gap-4 px-4 fira-font text-[#282828CC] font-bold mt-5 mb-10">
         <div>
-        <h5>Total Time = </h5>
-        <h6>{preparing.reduce((p, c) => ( p + c.preparing_time), 0)} minutes</h6>
+          <h5>Total Time = </h5>
+          <h6>{preparing.reduce((p, c) => p + c.preparing_time, 0)} minutes</h6>
         </div>
         <div>
-        <h5>Total Calories = </h5>
-        <h6>{preparing.reduce((p, c) => ( p + c.calories), 0)} calories</h6>
+          <h5>Total Calories = </h5>
+          <h6>{preparing.reduce((p, c) => p + c.calories, 0)} calories</h6>
         </div>
       </div>
     </div>
   );
 };
-
 export default Preparing;
