@@ -22,8 +22,8 @@ const Navbar = () => {
             placeholder="    Search"
           />
           <CiSearch className="absolute left-4 text-xl text-[#150B2BB3]" />
-          <button className=" bg-green-600 rounded-full p-3">
-            <GrUserManager />
+          <button className="btn bg-[#0BE58A] hover:bg-green-500 rounded-full">
+            <GrUserManager className="text-2xl"/>
           </button>
         </div>
       </div>
