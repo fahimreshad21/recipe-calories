@@ -20,11 +20,11 @@ const Card = ({recipe, handleWantToCook}) => {
           <div className="flex items-center gap-5">
             <div className="flex items-center gap-3">
               <img src="/src/assets/time.svg" alt="" />
-              <p>{preparing_time}</p>
+              <p>{preparing_time} min</p>
             </div>
             <div className="flex items-center gap-3">
               <img src="/src/assets/Vector.svg" alt="" />
-              <p>{calories}</p>
+              <p>{calories} calories</p>
             </div>
           </div>       
           <div className="card-actions mt-4">

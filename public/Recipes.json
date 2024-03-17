@@ -10,8 +10,8 @@
             "200 g basil leaf",
             "400 g mushroom"
         ],
-        "preparing_time": "30 min",
-        "calories": "320 calories"
+        "preparing_time": 30,
+        "calories": 320
     },
     {
         "recipe_image": "/src/assets/spaghetti bolognese.jpg",
@@ -25,8 +25,8 @@
             "100 g onion",
             "50 g grated parmesan cheese"
         ],
-        "preparing_time": "45 min",
-        "calories": "480 calories"
+        "preparing_time": 45,
+        "calories": 480
     },
     {
         "recipe_image": "/src/assets/slow-cooker-vegetarian-curry.jpg",
@@ -40,8 +40,8 @@
             "100 g cauliflower",
             "50 g curry powder"
         ],
-        "preparing_time": "40 min",
-        "calories": "250 calories"
+        "preparing_time": 40,
+        "calories": 250
     },
     {
         "recipe_image": "/src/assets/Classic_Caesar_Salad4.jpg",
@@ -54,8 +54,8 @@
             "50 g grated parmesan cheese",
             "30 ml Caesar dressing"
         ],
-        "preparing_time": "15 min",
-        "calories": "220 calories"
+        "preparing_time": 15,
+        "calories": 220
     },
     {
         "recipe_image": "/src/assets/chocolate-cake.webp",
@@ -70,8 +70,8 @@
             "2 eggs",
             "100 ml milk"
         ],
-        "preparing_time": "50 min",
-        "calories": "380 calories"
+        "preparing_time": 50,
+        "calories": 380
     },
     {
         "recipe_image": "/src/assets/Fruit-Smoothie.jpg",
@@ -85,7 +85,7 @@
             "150 ml yogurt",
             "50 ml orange juice"
         ],
-        "preparing_time": "5 min",
-        "calories": "150 calories"
+        "preparing_time": 5,
+        "calories": 150
     }
 ]

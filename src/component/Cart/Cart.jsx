@@ -19,7 +19,7 @@ const Cart = ({ cooks, setCooks }) => {
       </div>
       <div>
         <div className="overflow-x-auto">
-          <table className="table table-zebra">
+          <table className="table table-zebra text-[#282828B3] fira-font font-bold">
             {/* head */}
             <thead>
               <tr>
@@ -35,8 +35,8 @@ const Cart = ({ cooks, setCooks }) => {
                 <tr>
                   <th>{index + 1}</th>
                   <td>{cook.recipe_name}</td>
-                  <td>{cook.preparing_time}</td>
-                  <td>{cook.calories}</td>
+                  <td>{cook.preparing_time} minutes</td>
+                  <td>{cook.calories} calories</td>
                   <td>
                     <button
                       onClick={() => handlePreparing(cook, cook.recipe_id)}
@@ -57,6 +57,11 @@ const Cart = ({ cooks, setCooks }) => {
           handlePreparing={handlePreparing}
         ></Preparing>
       </div>
+
+      
+      
+      
+      
     </div>
   );
 };

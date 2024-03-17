@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Card from "./Card/Card";
 import Cart from "../Cart/Cart";
 import { useEffect, useState } from "react";
@@ -25,7 +26,7 @@ const Recipes = () => {
         <div className="container mx-auto">
             <div className='my-12 text-center space-y-4'>
             <h1 className="text-4xl lexend-font font-bold">Our Recipes</h1>
-            <p className="font-medium fira-font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum blanditiis magnam <br /> temporibus aspernatur placeat debitis.</p>
+            <p className="font-medium fira-font">Our recipes are carefully curated to ensure that they're not <br /> only delicious but also practical and achievable. We understand that <br /> life can be busy, so we prioritize recipes that are both flavorful and time-efficient...</p>
             </div>
             <div className="grid grid-cols-12 gap-8">
                 <div className="col-span-8 grid grid-cols-2 gap-8">
