@@ -5,11 +5,11 @@ import Banner from "./component/Banner/Banner";
 import Recipes from "./component/Recipes/Recipes";
 function App() {
   return (
-    <>
+    <div className="p-2">
       <Navbar></Navbar>
       <Banner></Banner>
       <Recipes></Recipes>
-    </>
+    </div>
   );
 }
 

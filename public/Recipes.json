@@ -1,6 +1,7 @@
+
 [
     {
-        "recipe_image": "/src/assets/chicken-teriyaki-recipe.jpg",
+        "recipe_image": "./image/chicken-teriyaki-recipe.jpg",
         "recipe_id": "001",
         "recipe_name": "Chicken Teriyaki",
         "short_description": "A delicious Japanese dish featuring tender chicken cooked in a savory teriyaki sauce.",
@@ -14,7 +15,7 @@
         "calories": 320
     },
     {
-        "recipe_image": "/src/assets/spaghetti bolognese.jpg",
+        "recipe_image": "./image/spaghetti bolognese.jpg",
         "recipe_id": "002",
         "recipe_name": "Spaghetti Bolognese",
         "short_description": "Classic Italian pasta dish with a rich tomato-based meat sauce.",
@@ -29,7 +30,7 @@
         "calories": 480
     },
     {
-        "recipe_image": "/src/assets/slow-cooker-vegetarian-curry.jpg",
+        "recipe_image": "./image/slow-cooker-vegetarian-curry.jpg",
         "recipe_id": "003",
         "recipe_name": "Vegetable Curry",
         "short_description": "A flavorful Indian curry filled with assorted vegetables and aromatic spices.",
@@ -44,7 +45,7 @@
         "calories": 250
     },
     {
-        "recipe_image": "/src/assets/Classic_Caesar_Salad4.jpg",
+        "recipe_image": "./image/Classic_Caesar_Salad4.jpg",
         "recipe_id": "004",
         "recipe_name": "Caesar Salad",
         "short_description": "A classic salad featuring crisp romaine lettuce, crunchy croutons, and tangy Caesar dressing.",
@@ -58,7 +59,7 @@
         "calories": 220
     },
     {
-        "recipe_image": "/src/assets/chocolate-cake.webp",
+        "recipe_image": "./image/chocolate-cake.webp",
         "recipe_id": "005",
         "recipe_name": "Chocolate Cake",
         "short_description": "Indulgent dessert with moist chocolate cake layers and creamy chocolate frosting.",
@@ -74,7 +75,7 @@
         "calories": 380
     },
     {
-        "recipe_image": "/src/assets/Fruit-Smoothie.jpg",
+        "recipe_image": "./image/Fruit-Smoothie.jpg",
         "recipe_id": "006",
         "recipe_name": "Fruit Smoothie",
         "short_description": "Refreshing beverage made with a blend of assorted fruits and yogurt.",

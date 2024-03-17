@@ -8,7 +8,7 @@ const Recipes = () => {
   const [recipes, setRecipes] = useState([]);
   const [cooks, setCooks] = useState([]);
   useEffect(() => {
-    fetch("/public/Recipes.json")
+    fetch("Recipes.json")
       .then((res) => res.json())
       .then((data) => setRecipes(data));
   }, []);
@@ -24,17 +24,17 @@ const Recipes = () => {
   };
   return (
     <div className="container mx-auto">
-      <div className="my-12 text-center space-y-4">
+      <div className="my-6 lg:my-12 text-center space-y-4">
         <h1 className="text-4xl lexend-font font-bold">Our Recipes</h1>
-        <p className="font-medium fira-font">
-          Our recipes are carefully curated to ensure that they're not <br />{" "}
-          only delicious but also practical and achievable. We understand that{" "}
-          <br /> life can be busy, so we prioritize recipes that are both
+        <p className="font-extrabold fira-font text-[#150B2B99]">
+          Our recipes are carefully curated to ensure that they're not <br />
+          only delicious but also practical and achievable. We  understand that
+         <br /> life can be busy, so we prioritize recipes that are both
           flavorful and time-efficient...
         </p>
       </div>
       <div className="grid grid-cols-12 gap-8">
-        <div className="col-span-8 grid grid-cols-2 gap-8">
+        <div className="col-span-12 lg:col-span-8 grid grid-cols-2 gap-2 lg:gap-8 p-2 lg:p-0">
           {recipes.map((recipe) => (
             <Card
               key={recipe.id}
@@ -43,7 +43,7 @@ const Recipes = () => {
             ></Card>
           ))}
         </div>
-        <div className="col-span-4">
+        <div className="col-span-12 lg:col-span-4 p-2 lg:p-0">
           <Cart cooks={cooks} setCooks={setCooks}></Cart>
         </div>
       </div>

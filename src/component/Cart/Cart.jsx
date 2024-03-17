@@ -13,7 +13,7 @@ const Cart = ({ cooks, setCooks }) => {
   return (
     <div className="card bg-base-100 shadow-xl border flex items-center">
       <div>
-        <h1 className="text-center text-2xl font-bold lexend-font mt-8   border-b-2 pb-2">
+        <h1 className="text-center text-2xl font-bold lexend-font mt-8 border-b-2 pb-2">
           Want to cook: <span>{cooks.length}</span>
         </h1>
       </div>
