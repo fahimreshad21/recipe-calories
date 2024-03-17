@@ -18,10 +18,9 @@ const Recipes = () => {
         setCooks(newCook);
         toast.success("Recipe added to cooking list!");
         }else{
-            toast.success('already exist')
+            toast.warn('already exist')
         }
-    }
-    
+    } 
     return (
         <div className="container mx-auto">
             <div className='my-12 text-center space-y-4'>
@@ -39,8 +38,7 @@ const Recipes = () => {
                 </div>
             </div>
             <ToastContainer />
-        </div>
-        
+        </div>       
     );
 };
 
