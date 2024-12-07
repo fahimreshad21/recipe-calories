@@ -1,6 +1,7 @@
 const Banner = () => {
   return (
-    <div className="banner py-4 lg:h-[650px] container mx-auto rounded-xl flex flex-col items-center justify-center space-y-3 lg:space-y-8">
+    <div className="px-2">
+      <div className="banner py-4 lg:h-[650px] container mx-auto rounded-xl flex flex-col items-center justify-center space-y-3 lg:space-y-8">
       <h1 className="text-xl lg:text-5xl text-center text-white lexend-font font-bold leading-tight">
         Discover an exceptional cooking <br /> class tailored for you!
       </h1>
@@ -15,6 +16,7 @@ const Banner = () => {
           Our Feedback
         </button>
       </div>
+    </div>
     </div>
   );
 };

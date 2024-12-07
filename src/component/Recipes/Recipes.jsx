@@ -13,7 +13,7 @@ const Recipes = () => {
       .then((data) => setRecipes(data));
   }, []);
   const handleWantToCook = (recipe_id, recipe) => {
-    const isExist = cooks.find((item) => item.recipe_id == recipe_id);
+    const isExist = cooks.find((item) => item?.recipe_id === recipe_id);
     if (!isExist) {
       const newCook = [...cooks, recipe];
       setCooks(newCook);
@@ -23,7 +23,7 @@ const Recipes = () => {
     }
   };
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto px-2">
       <div className="my-6 lg:my-12 text-center space-y-4">
         <h1 className="text-4xl lexend-font font-bold">Our Recipes</h1>
         <p className="font-extrabold fira-font text-[#150B2B99]">
@@ -34,7 +34,7 @@ const Recipes = () => {
         </p>
       </div>
       <div className="grid grid-cols-12 gap-8">
-        <div className="col-span-12 lg:col-span-8 grid grid-cols-2 gap-2 lg:gap-8 p-2 lg:p-0">
+        <div className="col-span-12 lg:col-span-8 grid md:grid-cols-2 gap-2 lg:gap-8 p-2 lg:p-0">
           {recipes.map((recipe) => (
             <Card
               key={recipe.id}

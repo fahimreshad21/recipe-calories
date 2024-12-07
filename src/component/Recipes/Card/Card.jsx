@@ -17,7 +17,7 @@ const Card = ({ recipe, handleWantToCook }) => {
       <div className="card h-full bg-base-100 shadow-xl border">
         <figure className="p-2 lg:p-6 ">
           <img
-            className="h-40 lg:h-60 w-full object-cover rounded-xl"
+            className="h-48 md:h-60 w-full object-cover rounded-xl"
             src={recipe_image}
             alt="Shoes"
           />
@@ -45,7 +45,7 @@ const Card = ({ recipe, handleWantToCook }) => {
               <p>{calories} calories</p>
             </div>
           </div>
-          <div className="card-actions flex justify-center lg:justify-start mt-4">
+          <div className="card-actions flex justify-center lg:justify-start mt-2">
             <button
               onClick={() => handleWantToCook(recipe_id, recipe)}
               className="btn bg-[#0BE58A] lexend-font text-lg rounded-3xl font-extrabold"

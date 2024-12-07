@@ -2,8 +2,8 @@ import { GrUserManager } from "react-icons/gr";
 import { CiSearch } from "react-icons/ci";
 const Navbar = () => {
   return (
-    <>
-      <div className="flex flex-col lg:flex-row items-center justify-between my-6 lg:my-12 container mx-auto gap-2 lg:gap-0">
+    <nav className="sticky top-0 z-50 bg-white shadow-2xl">
+      <div className="flex flex-col lg:flex-row items-center justify-between container mx-auto gap-2 lg:gap-0 py-6">
         <h2 className="text-black text-3xl font-bold lexend-font">
           Recipe Calories
         </h2>
@@ -23,11 +23,11 @@ const Navbar = () => {
           />
           <CiSearch className="absolute left-4 text-xl text-[#150B2BB3]" />
           <button className="btn bg-[#0BE58A] hover:bg-green-500 rounded-full">
-            <GrUserManager className="text-2xl"/>
+            <GrUserManager className="text-2xl" />
           </button>
         </div>
       </div>
-    </>
+    </nav>
   );
 };
 
