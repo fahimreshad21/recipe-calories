@@ -1,5 +1,4 @@
 /* eslint-disable react/prop-types */
-/* eslint-disable react/jsx-key */
 const Preparing = ({ preparing }) => {
   return (
     <div>
@@ -23,7 +22,7 @@ const Preparing = ({ preparing }) => {
             </thead>
             {/* row 1 */}
             {preparing.map((prepare, index) => (
-              <tbody className="bg-gray-50">
+              <tbody key={index} className="bg-gray-50">
                 <tr>
                   <th>{index + 1}</th>
                   <td>{prepare.recipe_name}</td>
