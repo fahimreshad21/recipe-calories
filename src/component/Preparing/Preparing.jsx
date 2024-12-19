@@ -25,9 +25,9 @@ const Preparing = ({ preparing }) => {
               <tbody key={index} className="bg-gray-50">
                 <tr>
                   <th>{index + 1}</th>
-                  <td>{prepare.recipe_name}</td>
-                  <td>{prepare.preparing_time} minutes</td>
-                  <td>{prepare.calories} calories</td>
+                  <td>{prepare?.recipe_name}</td>
+                  <td>{prepare?.preparing_time} minutes</td>
+                  <td>{prepare?.calories} calories</td>
                 </tr>
               </tbody>
             ))}
