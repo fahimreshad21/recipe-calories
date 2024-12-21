@@ -29,7 +29,7 @@ const Cart = ({ cooks, setCooks }) => {
                 <th>Calories</th>
               </tr>
             </thead>
-            {/* row 1 */}
+            {/* row */}
             {cooks.map((cook, index) => (
               <tbody className="bg-gray-50">
                 <tr>
