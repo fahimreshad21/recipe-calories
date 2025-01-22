@@ -11,7 +11,7 @@ const Banner = () => {
         </p>
         <div className="flex gap-4">
           <button className="bg-green-500 hover:bg-green-400 rounded-3xl p-2 lg:p-3 lg:font-semibold lexend-font">
-            Explore Now
+            Explores Now
           </button>
           <button className="rounded-3xl p-1 lg:p-2 lg:font-semibold lexend-font border border-dashed text-white">
             Our Feedback
