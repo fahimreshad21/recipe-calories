@@ -7,14 +7,14 @@ const Cart = ({ cooks, setCooks }) => {
   const handlePreparing = (prepare, recipe_id) => {
     const newPreparing = [...preparing, prepare];
     setPreparing(newPreparing);
-    const preparingRecipe = cooks.filter((co) => co.recipe_id !== recipe_id);
+    const preparingRecipe = cooks.filter((co) => co?.recipe_id !== recipe_id);
     setCooks(preparingRecipe);
   };
   return (
     <div className="card bg-base-100 shadow-xl border flex items-center">
       <div>
         <h1 className="text-center text-2xl font-bold lexend-font mt-8 border-b-2 pb-2">
-          Want to cook: <span>{cooks.length}</span>
+          Want to cook: <span>{cooks?.length}</span>
         </h1>
       </div>
       <div>
@@ -34,7 +34,7 @@ const Cart = ({ cooks, setCooks }) => {
               <tbody className="bg-gray-50">
                 <tr>
                   <th>{index + 1}</th>
-                  <td>{cook.recipe_name}</td>
+                  <td>{cook?.recipe_name}</td>
                   <td>{cook.preparing_time} minutes</td>
                   <td>{cook.calories} calories</td>
                   <td>
