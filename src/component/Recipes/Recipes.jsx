@@ -27,7 +27,7 @@ const Recipes = () => {
       <div className="my-6 lg:my-12 text-center space-y-4">
         <h1 className="text-4xl lexend-font font-bold">Our Recipes</h1>
         <p className="font-extrabold fira-font text-[#150B2B99]">
-          Our recipes are carefully curated to ensure that they're not <br />
+          Our recipes are carefully created to ensure that they're not <br />
           only delicious but also practical and achievable. We understand that
           <br /> life can be busy, so we prioritize recipes that are both
           flavorful and time-efficient......
