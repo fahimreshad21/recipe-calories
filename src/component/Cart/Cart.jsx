@@ -24,7 +24,7 @@ const Cart = ({ cooks, setCooks }) => {
             <thead>
               <tr>
                 <th></th>
-                <th>Name</th>
+                <th>Names</th>
                 <th>Time</th>
                 <th>Calories</th>
               </tr>
