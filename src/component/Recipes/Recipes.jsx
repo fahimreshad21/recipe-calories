@@ -28,9 +28,9 @@ const Recipes = () => {
         <h1 className="text-4xl lexend-font font-bold">Our Recipes</h1>
         <p className="font-extrabold fira-font text-[#150B2B99]">
           Our recipes are carefully curated to ensure that they're not <br />
-          only delicious but also practical and achievable. We  understand that
-         <br /> life can be busy, so we prioritize recipes that are both
-          flavorful and time-efficient...
+          only delicious but also practical and achievable. We understand that
+          <br /> life can be busy, so we prioritize recipes that are both
+          flavorful and time-efficient......
         </p>
       </div>
       <div className="grid grid-cols-12 gap-8">

@@ -38,7 +38,7 @@ const Card = ({ recipe, handleWantToCook }) => {
           <div className="flex flex-col lg:flex-row items-center gap-2 lg:gap-5">
             <div className="flex items-center gap-2 text-[#282828CC] fira-font font-extrabold">
             <IoTimeOutline className="text-2xl lg:text-xl"/>
-              <p>{preparing_time} min</p>
+              <p>{preparing_time} mins</p>
             </div>
             <div className="flex items-center gap-2 text-[#282828CC] fira-font font-extrabold">
             <AiOutlineFire className="text-2xl lg:text-xl"/>
@@ -50,7 +50,7 @@ const Card = ({ recipe, handleWantToCook }) => {
               onClick={() => handleWantToCook(recipe_id, recipe)}
               className="btn bg-[#0BE58A] lexend-font text-lg rounded-3xl font-extrabold"
             >
-              Want to Cook
+              Wants to Cook
             </button>
           </div>
         </div>
