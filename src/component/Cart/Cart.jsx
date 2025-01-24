@@ -36,7 +36,7 @@ const Cart = ({ cooks, setCooks }) => {
                   <th>{index + 1}</th>
                   <td>{cook?.recipe_name}</td>
                   <td>{cook?.preparing_time} minutes</td>
-                  <td>{cook.calories} calories</td>
+                  <td>{cook?.calories} calories</td>
                   <td>
                     <button
                       onClick={() => handlePreparing(cook, cook.recipe_id)}
